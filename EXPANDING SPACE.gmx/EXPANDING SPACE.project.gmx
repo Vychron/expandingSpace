@@ -14,27 +14,46 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_Collision.gml</script>
-    <script>scripts\scr_Input.gml</script>
-    <script>scripts\scr_Move.gml</script>
-    <script>scripts\scr_Player_Create.gml</script>
-    <script>scripts\scr_Player_Step.gml</script>
-    <script>scripts\scr_Player_Draw.gml</script>
-    <script>scripts\scr_Gravity.gml</script>
-    <script>scripts\scr_Jump.gml</script>
-    <script>scripts\scr_Player_Shoot.gml</script>
     <script>scripts\scr_Projectile_Create.gml</script>
+    <script>scripts\scr_Player_Draw.gml</script>
+    <script>scripts\scr_Player_Shoot.gml</script>
     <script>scripts\scr_Projectile_Step.gml</script>
+    <script>scripts\scr_Hook_Shoot.gml</script>
     <script>scripts\scr_Hook_Draw.gml</script>
+    <scripts name="Player">
+      <script>scripts\scr_Player_Create.gml</script>
+      <script>scripts\scr_Player_Switch.gml</script>
+      <scripts name="Player_Actions">
+        <script>scripts\scr_Input.gml</script>
+        <script>scripts\scr_Player_Collision.gml</script>
+        <script>scripts\scr_Player_Simple_Collision.gml</script>
+        <script>scripts\scr_Player_Jump.gml</script>
+        <script>scripts\scr_Player_Move.gml</script>
+        <script>scripts\scr_Player_Gravity.gml</script>
+      </scripts>
+      <scripts name="Player_State">
+        <script>scripts\scr_Player_State_Normal.gml</script>
+        <script>scripts\scr_State_Pauze.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Misc">
+      <script>scripts\scr_Player_OnCollide_Portal.gml</script>
+    </scripts>
+    <scripts name="Global">
+      <script>scripts\scr_Planet_Handler.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_Player</object>
     <object>objects\obj_Platform</object>
     <object>objects\obj_Projectile</object>
+    <object>objects\obj_Portal_Trigger</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\aarde</room>
-    <room>rooms\maan</room>
+    <room>rooms\earth</room>
+    <room>rooms\moon</room>
+    <room>rooms\neptune</room>
+    <room>rooms\saturn</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

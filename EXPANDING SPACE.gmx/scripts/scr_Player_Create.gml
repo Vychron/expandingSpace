@@ -1,14 +1,24 @@
+enum st_Player{
+    Normal,
+//    Animation
+    Pauze
+}
+state = st_Player.Normal
+
 vsp = 0;
 hsp = 0;
 
+global.force = 0
+global.grav = .6
+global.fricSpd = 1;
+global.moveSpd = 4;
 
-moveSpd = 4;
 jumpSpeed = 10;
 
 jumpAble = false;
 
 maxSpd = 4;
-fricSpd = 1;
+
 
 xPrevious = x;
 yPrevious = y;
