@@ -12,3 +12,7 @@ fricSpd = 1;
 
 xPrevious = x;
 yPrevious = y;
+
+window_set_cursor(cr_none);
+cursor_sprite = spr_Cursor;
+
