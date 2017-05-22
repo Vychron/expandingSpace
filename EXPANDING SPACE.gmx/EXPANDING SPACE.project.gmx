@@ -10,6 +10,7 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_Projectile</sprite>
     <sprite>sprites\spr_Cursor</sprite>
+    <sprite>sprites\spr_Dust</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -38,6 +39,10 @@
     </scripts>
     <scripts name="Misc">
       <script>scripts\scr_Player_OnCollide_Portal.gml</script>
+      <scripts name="Dust">
+        <script>scripts\scr_Dust_Create.gml</script>
+        <script>scripts\scr_Dust_Step.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Global">
       <script>scripts\scr_Planet_Handler.gml</script>
@@ -48,6 +53,7 @@
     <object>objects\obj_Platform</object>
     <object>objects\obj_Projectile</object>
     <object>objects\obj_Portal_Trigger</object>
+    <object>objects\obj_Dust</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\earth</room>

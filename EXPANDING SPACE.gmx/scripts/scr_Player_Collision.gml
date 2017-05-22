@@ -21,7 +21,7 @@ for (var i = 0; i < amount; i++)
     {
         if  (bbox_bottom - (y - yPrevious) <= collider.bbox_top){
             y = collider.bbox_top - sprite_height + 0.5;
-            vsp = 0
+//            vsp = 0
             script_execute(argument1);
         }
         else if (bbox_top - (y - yPrevious) >= collider.bbox_bottom){

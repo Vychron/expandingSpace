@@ -1,5 +1,7 @@
 move = right + -left;
 
+collideOnGround = 0; 
+
 moving = move != 0;
 
 dir = move;
