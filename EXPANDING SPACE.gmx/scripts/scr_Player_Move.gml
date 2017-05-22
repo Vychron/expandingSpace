@@ -1,49 +1,15 @@
 move = right + -left;
 
-collideOnGround = 0; 
-
 moving = move != 0;
+hsp += global.acc * move;
 
-dir = move;
+hsp = clamp(hsp,-hsp_Max,hsp_Max)
 
-if(right)
+if (!moving)
 {
-    if(hsp < -global.moveSpd)
-    {
-        hsp += global.fricSpd
-    }
-    else
-    {
-        hsp = global.moveSpd
-    }
-}
-if(left)
-{
-    if(hsp > global.moveSpd)
-    {
-        hsp -= global.fricSpd
-    }
-    else
-    {
-        hsp = -global.moveSpd
-    }
+    hsp = scr_Approach(hsp,0,global.fricSpd);
 }
 
-
-if(!moving)
-{
-    if(hsp !=0)
-    {    
-        if(hsp < 0)
-        {
-            hsp += global.fricSpd;
-        }
-        else
-        {
-            hsp -= global.fricSpd;
-        }
-    }
-}
 xPrevious = x;
 yPrevious = y;
 

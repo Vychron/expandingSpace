@@ -10,11 +10,13 @@ hsp = 0;
 
 global.force = 0
 global.grav = .6
-global.fricSpd = 1;
-global.moveSpd = 4;
+global.fricSpd = .3;
+global.acc = 0.5;
 
 jumpSpeed = 10;
 maxSpd = 4;
+
+hsp_Max = 3;
 
 collideOnGround = 0;
 

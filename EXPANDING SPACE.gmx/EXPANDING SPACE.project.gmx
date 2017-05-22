@@ -19,6 +19,7 @@
     <script>scripts\scr_Player_Draw.gml</script>
     <script>scripts\scr_Player_Shoot.gml</script>
     <script>scripts\scr_Projectile_Step.gml</script>
+    <script>scripts\scr_Approach.gml</script>
     <script>scripts\scr_Hook_Shoot.gml</script>
     <script>scripts\scr_Hook_Draw.gml</script>
     <scripts name="Player">
