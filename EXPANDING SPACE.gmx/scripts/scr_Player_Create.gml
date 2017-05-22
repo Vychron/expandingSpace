@@ -14,11 +14,9 @@ global.fricSpd = .3;
 global.acc = 0.5;
 
 jumpSpeed = 10;
-maxSpd = 4;
-
 hsp_Max = 3;
 
-collideOnGround = 0;
+hit = 0;
 
 xPrevious = x;
 yPrevious = y;

@@ -1,5 +1,3 @@
-vps = 0;
-
 if(up)
 {
     vsp = -jumpSpeed;

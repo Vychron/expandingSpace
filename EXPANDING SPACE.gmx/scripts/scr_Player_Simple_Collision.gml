@@ -19,7 +19,7 @@ for (var i = 0; i < amount; i++)
         bbox_left <= collider.bbox_right 
     )
     {
-        script_execute(argument1);
+        script_execute(argument1)
     }
 }
     
