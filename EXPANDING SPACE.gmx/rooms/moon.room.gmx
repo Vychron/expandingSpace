@@ -56,7 +56,6 @@ globalvar force;
   <instances>
     <instance objName="obj_Platform" x="96" y="288" name="inst_B9166D10" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Platform" x="96" y="192" name="inst_1E56FF44" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="32" y="384" name="inst_1DB20FCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player" x="192" y="224" name="inst_9C13E1BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
