@@ -13,3 +13,5 @@ else image_index = 0;
 
 //===Collide
 Player_MoveCollide();
+
+
