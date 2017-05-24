@@ -16,6 +16,7 @@ global.acc = 0.5;
 jumpSpeed = 10;
 hsp_Max = 3;
 
+fireRate = 0;
 hit = 0;
 
 xPrevious = x;

@@ -1,5 +1,11 @@
-if (mouseLeft)
+if (fireRate != 0)
 {
+    fireRate = scr_Approach(fireRate, 0, 0.10)
+}
+
+if (mouseLeft && fireRate = 0)
+{
+    fireRate = 1;
     with instance_create(x+(sprite_width/2), y+(sprite_height/2), obj_Projectile)
     {
         speed = shotSpeed
@@ -7,5 +13,5 @@ if (mouseLeft)
         image_angle = direction;
     }
 }
-show_debug_message(direction);
+
 

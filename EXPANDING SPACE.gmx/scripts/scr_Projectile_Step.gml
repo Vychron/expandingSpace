@@ -12,4 +12,12 @@ with instance_place(x,y,par_Enemies)
         image_xscale = sign(hsp);
     }
 }
-if place_meeting(x, y, par_Enemies) instance_destroy();
+if (place_meeting(x, y, par_Enemies))
+{
+    instance_destroy();
+    if (obj_Enemy.hit != 0)
+    {
+        obj_Enemy.hit = 1;
+    }
+}
+
