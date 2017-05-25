@@ -6,7 +6,10 @@ with instance_place(x,y,par_Enemies)
 {
     if (hit == 0)
     {
-        hit = 1;
+        if (hit >= 0)
+        {
+            hit = 1;
+        }
         vsp = -3;
         hsp = sign(x - other.x) * 4;
         image_xscale = sign(hsp);
@@ -15,9 +18,5 @@ with instance_place(x,y,par_Enemies)
 if (place_meeting(x, y, par_Enemies))
 {
     instance_destroy();
-    if (obj_Enemy.hit != 0)
-    {
-        obj_Enemy.hit = 1;
-    }
 }
 
