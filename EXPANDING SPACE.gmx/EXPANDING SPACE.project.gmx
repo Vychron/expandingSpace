@@ -10,11 +10,12 @@
     <sprite>sprites\mask_Enemy</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_Projectile</sprite>
+    <sprite>sprites\spr_Bullet</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_Dust</sprite>
-    <sprite>sprites\spr_Scuba</sprite>
     <sprite>sprites\spr_Heart</sprite>
     <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\spr_Scuba</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
