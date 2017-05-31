@@ -25,16 +25,20 @@ for (var i = 0; i < amount; i++)
             script_execute(argument1);
         }
         else if (bbox_top - (y - yPrevious) >= collider.bbox_bottom){
-            y = collider.bbox_bottom;
+            y = collider.bbox_bottom + 0.5;
             vsp = 0;
         }
         else if (bbox_left - (x - xPrevious) >= collider.bbox_right){
-            x = collider.bbox_right;
+            x = collider.bbox_right + 0.5;
             hsp = 0;
         }
         else if (bbox_right - (x - xPrevious) <= collider.bbox_left){
             x = collider.bbox_left - sprite_width;
             hsp = 0;
+        }
+        else
+        {
+//            show_message("OH NEE ROBIN! D:");
         }
     }
 }

@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_Enemy_Step</script>
+            <script>scr_Enemy_Switch</script>
           </argument>
           <argument>
             <kind>0</kind>

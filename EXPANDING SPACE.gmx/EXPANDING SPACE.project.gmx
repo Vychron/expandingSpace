@@ -16,6 +16,7 @@
     <sprite>sprites\spr_Heart</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\spr_Scuba</sprite>
+    <sprite>sprites\spr_Health</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,6 +27,7 @@
     <script>scripts\scr_Player_Draw.gml</script>
     <script>scripts\scr_Projectile_Step.gml</script>
     <script>scripts\scr_Hook_Shoot.gml</script>
+    <script>scripts\scr_Gravity.gml</script>
     <script>scripts\scr_Hook_Draw.gml</script>
     <scripts name="Collisions">
       <script>scripts\scr_Collision.gml</script>
@@ -39,7 +41,6 @@
         <script>scripts\scr_Player_Shoot.gml</script>
         <script>scripts\scr_Player_Jump.gml</script>
         <script>scripts\scr_Player_Move.gml</script>
-        <script>scripts\scr_Player_Gravity.gml</script>
         <script>scripts\scr_Player_OnHit.gml</script>
       </scripts>
       <scripts name="Player_State">
@@ -54,7 +55,7 @@
       </scripts>
       <scripts name="Portal">
         <script>scripts\scr_Portal_Step.gml</script>
-        <script>scripts\scr_OnCollide_Portal.gml</script>
+        <script>scripts\scr_Portal_OnCollide.gml</script>
       </scripts>
       <scripts name="Collectables">
         <scripts name="Scuba">
@@ -66,11 +67,19 @@
     <scripts name="Global">
       <script>scripts\scr_Collect_Handler.gml</script>
       <script>scripts\scr_Planet_Handler.gml</script>
-      <script>scripts\scr_Handler.gml</script>
+      <script>scripts\scr_UI_Handler.gml</script>
+      <script>scripts\scr_Parralel.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_Enemy_Create.gml</script>
-      <script>scripts\scr_Enemy_Step.gml</script>
+      <script>scripts\scr_Enemy_Switch.gml</script>
+      <script>scripts\scr_Enemy_State_Normal.gml</script>
+      <script>scripts\scr_Enemy_State_Attack.gml</script>
+      <scripts name="Enemy_Actions">
+        <script>scripts\scr_Enemy_Move.gml</script>
+        <script>scripts\scr_Enemy_OnHit.gml</script>
+        <script>scripts\scr_Enemy_Aggro.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\empty.gml</script>
   </scripts>
@@ -91,6 +100,7 @@
     <room>rooms\moon</room>
     <room>rooms\neptune</room>
     <room>rooms\saturn</room>
+    <room>rooms\start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

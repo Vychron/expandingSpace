@@ -1,6 +1,15 @@
-image_index = 0;
-image_speed = 0;
+enum st_Enemy{
+    Normal,
+    Attack,
+//    Animation
+    Pauze
+}
+state = st_Enemy.Normal
 
+xPrevious = x;
+yPrevious = y;
+aggroRange = 200
+hp = 5;
 hsp = 0;
 vsp = 0;
 hsp_f = .0;

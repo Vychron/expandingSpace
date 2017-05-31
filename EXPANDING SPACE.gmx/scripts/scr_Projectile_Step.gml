@@ -4,6 +4,7 @@ if (place_meeting(x, y, obj_Platform)||(x>room_width||y>room_height||x<0||y<0))
 }
 with instance_place(x,y,par_Enemies)
 {
+    hp -= 1;
     if (hit == 0)
     {
         if (hit >= 0)
