@@ -20,21 +20,25 @@ for (var i = 0; i < amount; i++)
     )
     {
         if  (bbox_bottom - (y - yPrevious) <= collider.bbox_top){
-            y = collider.bbox_top - sprite_height + 0.5;
+            y = collider.bbox_top - sprite_height;
             vsp = 0
             script_execute(argument1);
         }
         else if (bbox_top - (y - yPrevious) >= collider.bbox_bottom){
-            y = collider.bbox_bottom;
+            y = collider.bbox_bottom + 1;
             vsp = 0;
         }
         else if (bbox_left - (x - xPrevious) >= collider.bbox_right){
-            x = collider.bbox_right;
+            x = collider.bbox_right + 1;
             hsp = 0;
         }
         else if (bbox_right - (x - xPrevious) <= collider.bbox_left){
-            x = collider.bbox_left - sprite_width;
+            x = collider.bbox_left - sprite_width - 1;
             hsp = 0;
+        }
+        else
+        {
+//            show_message("OH NEE ROBIN! D:");
         }
     }
 }

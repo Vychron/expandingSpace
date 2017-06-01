@@ -1,16 +1,6 @@
-///Main Logic
-
-//====Tick
-vsp += grv;
-hsp = scr_Approach(hsp,0,frc);
-
-if (hit != 0)
-{
-    hit = scr_Approach(hit,0,0.02);
+switch (state){
+    case st_Enemy.Normal: scr_Enemy_State_Normal(); break;
+    case st_Enemy.Attack: scr_Enemy_State_Attack(); break;
+    case st_Enemy.Aggro: scr_Enemy_State_Aggro(); break;
+    case st_Enemy.Pauze: scr_State_Pauze(); break;
 }
-
-
-//===Collide
-Player_MoveCollide();
-
-

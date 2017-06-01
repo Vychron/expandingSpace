@@ -1,6 +1,18 @@
-image_index = 0;
-image_speed = 0;
+enum st_Enemy{
+    Normal,
+    Attack,
+    Aggro,
+    Pauze
+}
+state = st_Enemy.Normal
 
+xPrevious = x;
+yPrevious = y;
+
+aggroRange = 250;
+punchRange = 70;
+
+hp = 5;
 hsp = 0;
 vsp = 0;
 hsp_f = .0;
