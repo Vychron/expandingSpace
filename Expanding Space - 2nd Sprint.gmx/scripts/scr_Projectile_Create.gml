@@ -1,0 +1,1 @@
+shotSpeed = 20;
