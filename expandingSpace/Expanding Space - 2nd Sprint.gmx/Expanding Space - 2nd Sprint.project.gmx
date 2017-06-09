@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\mask_Enemy</sprite>
+    <sprite>sprites\enemy_Attackbox</sprite>
     <sprite>sprites\spr_portal_trigger</sprite>
     <sprite>sprites\spr_Scuba</sprite>
     <sprite>sprites\sprite1</sprite>
@@ -101,15 +101,11 @@
     <script>scripts\scr_Parralel.gml</script>
     <script>scripts\scr_Planet_Handler.gml</script>
     <script>scripts\scr_Player_Collision.gml</script>
-    <script>scripts\scr_Player_Create.gml</script>
-    <script>scripts\scr_Player_Draw.gml</script>
     <script>scripts\scr_Player_Gravity.gml</script>
     <script>scripts\scr_Player_Jump.gml</script>
     <script>scripts\scr_Player_Move.gml</script>
     <script>scripts\scr_Player_OnHit.gml</script>
     <script>scripts\scr_Player_Shoot.gml</script>
-    <script>scripts\scr_Player_State_Normal.gml</script>
-    <script>scripts\scr_Player_Step.gml</script>
     <script>scripts\scr_Scuba_Step.gml</script>
     <script>scripts\scr_Portal_OnCollide.gml</script>
     <script>scripts\scr_Portal_Step.gml</script>
@@ -119,6 +115,13 @@
     <script>scripts\scr_State_Pauze.gml</script>
     <script>scripts\scr_StopWalking.gml</script>
     <script>scripts\scr_UI_Handler.gml</script>
+    <scripts name="Player">
+      <script>scripts\scr_Player_Create.gml</script>
+      <script>scripts\scr_Player_State_Normal.gml</script>
+      <script>scripts\scr_Player_Draw.gml</script>
+      <script>scripts\scr_Player_Step.gml</script>
+      <script>scripts\scr_Player_WeaponState.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>
@@ -142,6 +145,7 @@
     <object>objects\par_Enemies</object>
     <object>objects\par_wall</object>
     <object>objects\timer</object>
+    <object>objects\obj_Enemy_Attacking</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\earth</room>

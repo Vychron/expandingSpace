@@ -9,3 +9,5 @@ scr_Gravity();
 scr_Enemy_Move();
 scr_Enemy_OnHit();
 scr_Enemy_Aggro();
+
+instance_create(x, y, obj_Enemy_Attacking);

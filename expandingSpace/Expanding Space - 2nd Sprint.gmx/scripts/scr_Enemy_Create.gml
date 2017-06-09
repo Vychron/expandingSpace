@@ -11,7 +11,9 @@ xPrevious = x;
 yPrevious = y;
 
 aggroRange = 250;
-punchRange = 70;
+punchRange = 50;
+
+attack = 0;
 
 hp = 5;
 hsp = 0;

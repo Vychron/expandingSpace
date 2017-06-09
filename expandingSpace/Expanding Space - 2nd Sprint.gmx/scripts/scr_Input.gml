@@ -7,3 +7,5 @@ left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 mouseLeft = mouse_check_button(mb_left);
 reload = keyboard_check(ord("R"));
 
+swap = keyboard_check(vk_tab);
+

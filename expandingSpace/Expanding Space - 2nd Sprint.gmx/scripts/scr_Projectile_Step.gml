@@ -13,7 +13,6 @@ with instance_place(x,y,par_Enemies)
         }
         vsp = -3;
         hsp = sign(x - other.x) * 4;
-        image_xscale = sign(hsp);
     }
 }
 if (place_meeting(x, y, par_Enemies))

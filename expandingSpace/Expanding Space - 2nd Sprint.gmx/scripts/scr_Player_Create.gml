@@ -3,7 +3,16 @@ enum st_Player{
 //    Animation
     Pauze
 }
-state = st_Player.Normal
+
+enum st_Weapon{
+    Gun,
+    GatlingGun,
+    Hook
+}
+
+state = st_Player.Normal;
+
+weaponState = st_Weapon.Gun;
 
 vsp = 0;
 hsp = 0;
@@ -24,6 +33,8 @@ hit = 0;
 
 xPrevious = x;
 yPrevious = y;
+
+attacked = false;
 
 window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
