@@ -113,7 +113,6 @@
     <script>scripts\scr_Projectile_Step.gml</script>
     <script>scripts\scr_Simple_Collision.gml</script>
     <script>scripts\scr_State_Pauze.gml</script>
-    <script>scripts\scr_StopWalking.gml</script>
     <script>scripts\scr_UI_Handler.gml</script>
     <scripts name="Player">
       <script>scripts\scr_Player_Create.gml</script>
@@ -122,7 +121,14 @@
       <script>scripts\scr_Player_Step.gml</script>
       <script>scripts\scr_Player_WeaponState.gml</script>
     </scripts>
+    <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_Text_Draw.gml</script>
+    <script>scripts\scr_Text_Create.gml</script>
+    <script>scripts\scr_Text_Step.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>
     <object>objects\obj_Cursor</object>
@@ -138,6 +144,7 @@
     <object>objects\obj_Portal_Trigger</object>
     <object>objects\obj_Projectile</object>
     <object>objects\obj_Scuba</object>
+    <object>objects\obj_spawner</object>
     <object>objects\obj_Spike_Par</object>
     <object>objects\obj_Spike_R</object>
     <object>objects\obj_Spike_U</object>
@@ -146,6 +153,7 @@
     <object>objects\par_wall</object>
     <object>objects\timer</object>
     <object>objects\obj_Enemy_Attacking</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\earth</room>
