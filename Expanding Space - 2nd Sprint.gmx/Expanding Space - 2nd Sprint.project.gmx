@@ -44,6 +44,9 @@
       <sprite>sprites\spr_Bullet</sprite>
       <sprite>sprites\spr_Start</sprite>
     </sprites>
+    <sprite>sprites\sprite28</sprite>
+    <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -106,6 +109,8 @@
     <script>scripts\scr_Player_Move.gml</script>
     <script>scripts\scr_Player_OnHit.gml</script>
     <script>scripts\scr_Player_Shoot.gml</script>
+    <script>scripts\scr_Player_Rifle.gml</script>
+    <script>scripts\scr_Player_Shotgun.gml</script>
     <script>scripts\scr_Scuba_Step.gml</script>
     <script>scripts\scr_Portal_OnCollide.gml</script>
     <script>scripts\scr_Portal_Step.gml</script>
@@ -114,6 +119,7 @@
     <script>scripts\scr_Simple_Collision.gml</script>
     <script>scripts\scr_State_Pauze.gml</script>
     <script>scripts\scr_UI_Handler.gml</script>
+    <script>scripts\scr_Player_UI.gml</script>
     <scripts name="Player">
       <script>scripts\scr_Player_Create.gml</script>
       <script>scripts\scr_Player_State_Normal.gml</script>
@@ -125,6 +131,8 @@
     <script>scripts\scr_Text_Draw.gml</script>
     <script>scripts\scr_Text_Create.gml</script>
     <script>scripts\scr_Text_Step.gml</script>
+    <script>scripts\script58.gml</script>
+    <script>scripts\scr_Player_WeaponWheel.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -151,7 +159,6 @@
     <object>objects\obj_Start</object>
     <object>objects\par_Enemies</object>
     <object>objects\par_wall</object>
-    <object>objects\timer</object>
     <object>objects\obj_Enemy_Attacking</object>
     <object>objects\obj_text</object>
   </objects>

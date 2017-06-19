@@ -4,4 +4,4 @@ if (global.WarnScuba != 0)
 {
     global.WarnScuba = scr_Approach(global.WarnScuba, 0, 0.02)
 }
-show_debug_message(global.WarnScuba);
+
