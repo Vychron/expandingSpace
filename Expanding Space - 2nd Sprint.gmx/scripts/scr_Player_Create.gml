@@ -1,5 +1,7 @@
 enum st_Player{
     Normal,
+    Death,
+//    Animation
     Pauze
 }
 
@@ -10,17 +12,11 @@ enum st_Weapon{
 }
 
 state = st_Player.Normal;
-
+currentSubImg = 0;
 weaponState = st_Weapon.Gun;
 weaponAlpha1 = 1;
 weaponAlpha2 = 0.25;
 
-/*global.weaponPosX1 = 1160;
-global.weaponPosY1 = 600;
-global.weaponPosX2 = 1200;
-global.weaponPosY2 = 640;
-global.weaponPosX3 = 1120;
-global.weaponPosY3 = 640;*/
 weaponPosX[0] = 1160;
 weaponPosY[0] = 600;
 weaponPosX[1] = 1190;
@@ -63,7 +59,6 @@ rifleAmmo = 30;
 shotgunAmmo = 8;
 Hp = 3;
 
-
 jumpSpeed = 10;
 hsp_Max = 3;
 
@@ -78,3 +73,5 @@ attacked = false;
 window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
 
+
+audio_play_sound(snd_Music, 1, true);

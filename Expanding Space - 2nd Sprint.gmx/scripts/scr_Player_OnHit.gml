@@ -1,4 +1,4 @@
-if (place_meeting(x, y, obj_Enemy_Attacking))
+if (place_meeting(x, y, obj_Enemy_Attacking)||place_meeting(x, y, obj_Spike_Par))
 {
     if attacked == false
     {
@@ -9,8 +9,13 @@ if (place_meeting(x, y, obj_Enemy_Attacking))
 
 if (Hp <= 0)
 {
-    Hp = 3;
-    room_restart();
+    state = st_Player.Death;
+    if currentSubImg > 13
+    {
+        show_message("You are dead");
+        Hp = 3;
+        room_restart();
+    }
 }
 hit = scr_Approach(hit, 0, 0.05);
 if (hit != 0)
