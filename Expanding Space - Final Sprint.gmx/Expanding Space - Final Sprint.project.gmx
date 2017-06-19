@@ -115,6 +115,8 @@
     <script>scripts\scr_Player_Move.gml</script>
     <script>scripts\scr_Player_OnHit.gml</script>
     <script>scripts\scr_Player_Shoot.gml</script>
+    <script>scripts\scr_Player_Rifle.gml</script>
+    <script>scripts\scr_Player_Shotgun.gml</script>
     <script>scripts\scr_Scuba_Step.gml</script>
     <script>scripts\scr_Portal_OnCollide.gml</script>
     <script>scripts\scr_Portal_Step.gml</script>
@@ -122,11 +124,16 @@
     <script>scripts\scr_Projectile_Step.gml</script>
     <script>scripts\scr_Simple_Collision.gml</script>
     <script>scripts\scr_State_Pauze.gml</script>
+<<<<<<< HEAD:Expanding Space - Final Sprint.gmx/Expanding Space - Final Sprint.project.gmx
     <script>scripts\scr_Player_UI.gml</script>
     <script>scripts\scr_Player_Rifle.gml</script>
     <script>scripts\scr_UI_Handler.gml</script>
     <script>scripts\scr_Player_WeaponWheel.gml</script>
     <script>scripts\scr_Player_Shotgun.gml</script>
+=======
+    <script>scripts\scr_UI_Handler.gml</script>
+    <script>scripts\scr_Player_UI.gml</script>
+>>>>>>> c3bd916c6ea0b295910d47c1fb88719b8701947e:Expanding Space - 2nd Sprint.gmx/Expanding Space - 2nd Sprint.project.gmx
     <scripts name="Player">
       <script>scripts\scr_Player_Create.gml</script>
       <script>scripts\scr_Player_State_Normal.gml</script>
@@ -134,11 +141,23 @@
       <script>scripts\scr_Player_Step.gml</script>
       <script>scripts\scr_Player_WeaponState.gml</script>
     </scripts>
+<<<<<<< HEAD:Expanding Space - Final Sprint.gmx/Expanding Space - Final Sprint.project.gmx
     <script>scripts\scr_Text_Draw.gml</script>
     <script>scripts\scr_Text_Create.gml</script>
     <script>scripts\script58.gml</script>
     <script>scripts\scr_text.gml</script>
+=======
+    <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_Text_Draw.gml</script>
+    <script>scripts\scr_Text_Create.gml</script>
+    <script>scripts\scr_Text_Step.gml</script>
+    <script>scripts\script58.gml</script>
+    <script>scripts\scr_Player_WeaponWheel.gml</script>
+>>>>>>> c3bd916c6ea0b295910d47c1fb88719b8701947e:Expanding Space - 2nd Sprint.gmx/Expanding Space - 2nd Sprint.project.gmx
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>
     <object>objects\obj_Cursor</object>
@@ -154,14 +173,15 @@
     <object>objects\obj_Portal_Trigger</object>
     <object>objects\obj_Projectile</object>
     <object>objects\obj_Scuba</object>
+    <object>objects\obj_spawner</object>
     <object>objects\obj_Spike_Par</object>
     <object>objects\obj_Spike_R</object>
     <object>objects\obj_Spike_U</object>
     <object>objects\obj_Start</object>
     <object>objects\par_Enemies</object>
     <object>objects\par_wall</object>
-    <object>objects\timer</object>
     <object>objects\obj_Enemy_Attacking</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
