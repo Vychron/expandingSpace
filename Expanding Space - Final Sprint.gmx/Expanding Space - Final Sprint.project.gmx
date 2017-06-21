@@ -138,6 +138,7 @@
     <script>scripts\scr_Text_Create.gml</script>
     <script>scripts\script58.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_Camera_Step.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>
@@ -162,6 +163,7 @@
     <object>objects\par_wall</object>
     <object>objects\timer</object>
     <object>objects\obj_Enemy_Attacking</object>
+    <object>objects\obj_Camera</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
@@ -169,8 +171,8 @@
     <room>rooms\rm_tut2</room>
     <room>rooms\rm_tut3</room>
     <room>rooms\earth</room>
-    <room>rooms\neptune</room>
     <room>rooms\moon</room>
+    <room>rooms\neptune</room>
     <room>rooms\saturn</room>
   </rooms>
   <help>
