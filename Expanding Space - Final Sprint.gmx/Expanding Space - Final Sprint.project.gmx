@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_Music</sound>
+    <sound>sound\snd_Ambient</sound>
+    <sound>sound\snd_Shotgun_Reload</sound>
+    <sound>sound\snd_reload2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\enemy_Attackbox</sprite>
@@ -23,6 +26,9 @@
       <sprite>sprites\spr_Player_Gun</sprite>
       <sprite>sprites\spr_Projectile</sprite>
       <sprite>sprites\spr_Player_Death</sprite>
+      <sprite>sprites\spr_Player_Arm_Shotgun</sprite>
+      <sprite>sprites\spr_Player_Arm_Rifle</sprite>
+      <sprite>sprites\spr_Player_Arm_Rifle_Reload</sprite>
     </sprites>
     <sprites name="Enemy Sprites">
       <sprite>sprites\spr_Enemy_Idle</sprite>
@@ -61,6 +67,8 @@
     <background>background\tut2</background>
     <background>background\tut3</background>
     <background>background\Tiles</background>
+    <background>background\bg_SpaceTile</background>
+    <background>background\bg_NonTiled</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -137,8 +145,8 @@
     <script>scripts\scr_Text_Draw.gml</script>
     <script>scripts\scr_Text_Create.gml</script>
     <script>scripts\script58.gml</script>
-    <script>scripts\scr_text.gml</script>
     <script>scripts\scr_Camera_Step.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>
@@ -166,13 +174,13 @@
     <object>objects\obj_Camera</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\earth</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_tut1</room>
     <room>rooms\rm_tut2</room>
     <room>rooms\rm_tut3</room>
-    <room>rooms\earth</room>
-    <room>rooms\moon</room>
     <room>rooms\neptune</room>
+    <room>rooms\moon</room>
     <room>rooms\saturn</room>
   </rooms>
   <help>

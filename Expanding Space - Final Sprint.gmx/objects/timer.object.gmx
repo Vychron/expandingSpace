@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>seconds = 5;
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,8 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_Input();
-if reload
+            <string>seconds = scr_Approach(seconds, 0, 1/room_speed);
+if seconds == 0
+{
+    room_goto_next();
+}
+if mouse_check_button_released(mb_left)&amp;&amp;seconds &lt;= 4.8
 {
     room_goto_next();
 }

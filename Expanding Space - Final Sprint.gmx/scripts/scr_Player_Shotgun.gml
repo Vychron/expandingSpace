@@ -21,6 +21,9 @@ if (mouseLeft && fireRate = 0 && Ammo > 0)
 
 if (reload)
 {
-    shotgunAmmo = 4;
+    reloading = true;
+    canShoot = false;
+    weaponSubImg = 0;
+    shotgunAmmo = 0;
 }
-show_debug_message(obj_Camera.shake);
+

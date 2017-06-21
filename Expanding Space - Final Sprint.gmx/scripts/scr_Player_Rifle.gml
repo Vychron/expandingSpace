@@ -14,9 +14,10 @@ if (mouseLeft && fireRate = 0 && Ammo > 0)
         image_angle = direction;
     }
 }
-
 if (reload)
 {
-    rifleAmmo = 30;
+    reloading = true;
+    canShoot = false;
+    weaponSubImg = 0;
+    rifleAmmo = 0;
 }
-

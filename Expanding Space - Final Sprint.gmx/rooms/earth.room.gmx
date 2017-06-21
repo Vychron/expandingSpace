@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background1" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_NonTiled" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="bg_background" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -101,14 +101,13 @@
     <instance objName="obj_MovePlatTrigger" x="736" y="704" name="inst_2909296B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MovePlatTrigger" x="736" y="1472" name="inst_74021BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MovePlatTrigger" x="737" y="944" name="inst_59AFE176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MovingPlatform" x="672" y="1376" name="inst_ABF5E1B6" locked="0" code="" scaleX="0.176795586943626" scaleY="0.180000007152557" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MovingPlatform" x="672" y="448" name="inst_CE6DC06F" locked="0" code="" scaleX="0.176795586943626" scaleY="0.175824180245399" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MovingPlatform" x="672" y="1376" name="inst_ABF5E1B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MovingPlatform" x="672" y="448" name="inst_CE6DC06F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Portal_Fake" x="0" y="1376" name="inst_3EC51756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_World_Handler" x="0" y="0" name="inst_E99EE0DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Portal" x="672" y="0" name="inst_C4F85126" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Scuba" x="0" y="992" name="inst_EAFBD67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Camera" x="224" y="96" name="inst_BCF5F458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_World_Handler" x="480" y="288" name="inst_AF3C7979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Camera" x="224" y="96" name="inst_F1E3872E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tiles" x="320" y="1408" w="32" h="32" xo="8" yo="208" id="10000453" name="inst_71CDC7F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -17,6 +17,9 @@ if (mouseLeft && fireRate = 0 && Ammo > 0)
 
 if (reload)
 {
-    pistolAmmo = 16;
+    reloading = true;
+    canShoot = false;
+    weaponSubImg = 0;
+    pistolAmmo = 0;
 }
 

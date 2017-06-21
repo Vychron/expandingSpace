@@ -56,8 +56,10 @@ global.acc = 0.5;
 
 pistolAmmo = 16;
 rifleAmmo = 30;
-shotgunAmmo = 8;
+shotgunAmmo = 4;
 Hp = 3;
+reloading = false;
+weaponSubImg = 0;
 
 jumpSpeed = 10;
 hsp_Max = 3;
@@ -74,4 +76,4 @@ window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
 
 
-audio_play_sound(snd_Music, 1, true);
+audio_play_sound(snd_Ambient, 1, true);

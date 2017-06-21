@@ -1,5 +1,5 @@
-var _xpos = view_xview/(room_width-view_wview);
-var _ypos = view_yview/(room_height-view_hview);
+var _xpos = view_xview/(room_width-view_wview)/25;
+var _ypos = view_yview/(room_height-view_hview)/5;
 
 background_x[0]=lerp(0,room_width-background_width[0],_xpos);
 background_y[0]=lerp(0,room_height-background_height[0],_ypos);

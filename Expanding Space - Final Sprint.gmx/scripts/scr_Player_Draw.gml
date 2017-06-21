@@ -62,9 +62,58 @@ if state == st_Player.Normal
     }
         //tekent het wapen van de speler en richt deze op de crosshair
         //(als laatste omdat deze bovenop getekend moet worden
-    if weaponState == st_Weapon.Gun
+    switch weaponState
     {
-        draw_sprite_ext(spr_Player_Gun_Shoot, fireRate*10+7, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+        case st_Weapon.Gun:
+        if !reloading
+        {
+            draw_sprite_ext(spr_Player_Gun_Shoot, fireRate*10+7, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+        }
+        else
+        {
+            //draw_sprite_ext(spritename, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            weaponSubImg += 0.2;
+            if weaponSubImg >= 10
+            {
+                pistolAmmo = 16;
+                reloading = false;
+            }
+        }
+        break;
+        case st_Weapon.Shotgun:
+        if !reloading
+        {
+            draw_sprite_ext(spr_Player_Arm_Shotgun, fireRate*27+16, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            if fireRate == 0.7
+            {audio_play_sound(snd_Shotgun_Reload, 1, 0);}
+        }
+        else
+        {
+            //draw_sprite_ext(spritename, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            weaponSubImg += 0.2;
+            if weaponSubImg >= 10
+            {
+                shotgunAmmo = 4;
+                reloading = false;
+            }
+        }
+        break;
+        case st_Weapon.Rifle:
+        if !reloading
+        {
+            draw_sprite_ext(spr_Player_Arm_Rifle, fireRate*03, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+        }
+        else
+        {
+            draw_sprite_ext(spr_Player_Arm_Rifle_Reload, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            weaponSubImg += 0.2;
+            if weaponSubImg >= 10
+            {
+                rifleAmmo = 30;
+                reloading = false;             
+            }
+        }
+        break;
     }
 }
 if state == st_Player.Death

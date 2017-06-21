@@ -15,3 +15,8 @@ yPrevious = y;
 
 x += hsp + global.force;
 y += vsp;
+
+if reloading
+{hsp_Max = 1.5;}
+else
+{hsp_Max = 3;}
