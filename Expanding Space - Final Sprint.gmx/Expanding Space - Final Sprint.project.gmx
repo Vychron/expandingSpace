@@ -9,6 +9,10 @@
     <sound>sound\snd_Ambient</sound>
     <sound>sound\snd_Shotgun_Reload</sound>
     <sound>sound\snd_reload2</sound>
+    <sound>sound\snd_pistolShot</sound>
+    <sound>sound\snd_GunEmpty</sound>
+    <sound>sound\snd_Shotgun</sound>
+    <sound>sound\snd_Text</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\enemy_Attackbox</sprite>
@@ -53,6 +57,7 @@
       <sprite>sprites\spr_Heart</sprite>
       <sprite>sprites\spr_Bullet</sprite>
       <sprite>sprites\spr_Start</sprite>
+      <sprite>sprites\spr_UI</sprite>
     </sprites>
     <sprite>sprites\sprite28</sprite>
     <sprite>sprites\sprite29</sprite>

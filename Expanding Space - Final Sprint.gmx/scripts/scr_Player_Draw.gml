@@ -84,8 +84,10 @@ if state == st_Player.Normal
         if !reloading
         {
             draw_sprite_ext(spr_Player_Arm_Shotgun, fireRate*27+16, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
-            if fireRate == 0.7
-            {audio_play_sound(snd_Shotgun_Reload, 1, 0);}
+            if fireRate == 0.93
+            {
+                audio_play_sound(snd_Shotgun_Reload, 1, 0);
+            }
         }
         else
         {
