@@ -13,6 +13,7 @@
     <sound>sound\snd_GunEmpty</sound>
     <sound>sound\snd_Shotgun</sound>
     <sound>sound\snd_Text</sound>
+    <sound>sound\snd_WallHit</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\enemy_Attackbox</sprite>
@@ -152,6 +153,7 @@
     <script>scripts\script58.gml</script>
     <script>scripts\scr_Camera_Step.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_Music.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_World_Handler</object>

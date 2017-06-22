@@ -77,4 +77,5 @@ cursor_sprite = spr_Cursor;
 
 
 audio_play_sound(snd_Ambient, 1, true);
-//audio_play_sound(snd_Music, 1, true);
+snd = audio_play_sound(snd_Music, 1, true);
+audio_sound_gain(snd, 0, 0);

@@ -17,8 +17,10 @@ switch (state){
         currentSubImg = 1; break;
     case st_Enemy.Pauze: scr_State_Pauze(); break;
 }
-scr_Enemy_WallColliding(obj_Platform)
+scr_Enemy_WallColliding(obj_Platform);
 if (hp <= 0)
 {
     state = st_Enemy.Death;
 }
+
+

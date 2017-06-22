@@ -1,5 +1,10 @@
-if (place_meeting(x, y, obj_Platform)||(x>room_width||y>room_height||x<0||y<0))
+if (x>room_width||y>room_height||x<0||y<0)
 {
+    instance_destroy();
+}
+if place_meeting(x, y, obj_Platform)
+{
+    audio_play_sound(snd_WallHit, 1, false);
     instance_destroy();
 }
 with instance_place(x,y,par_Enemies)
