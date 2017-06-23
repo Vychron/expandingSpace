@@ -10,6 +10,7 @@ if (mouseLeft && fireRate = 0 && !reloading)
         audio_play_sound(snd_pistolShot, 1, false);
         fireRate = 1;
         rifleAmmo -= 1;
+        obj_Camera.shake = 1;
         with instance_create(x+(sprite_width/2), y+(sprite_height/2), obj_Projectile)
         {
             speed = shotSpeed

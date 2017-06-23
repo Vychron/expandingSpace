@@ -10,7 +10,7 @@ if (mouseLeft && fireRate = 0 && !reloading)
         audio_play_sound(snd_Shotgun, 1, false);
         fireRate = 1;
         shotgunAmmo -= 1;
-        obj_Camera.shake = 15;
+        obj_Camera.shake = 5;
         for (i = 0; i < 5; i += 1)
         {
             with instance_create(x+(sprite_width/2), y+(sprite_height/2), obj_Projectile)

@@ -8,12 +8,12 @@
   <tilehsep>0</tilehsep>
   <tilevsep>0</tilevsep>
   <HTile>0</HTile>
-  <VTile>0</VTile>
+  <VTile>-1</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>800</width>
-  <height>414</height>
+  <width>413</width>
+  <height>748</height>
   <data>images\bg_background.png</data>
 </background>
