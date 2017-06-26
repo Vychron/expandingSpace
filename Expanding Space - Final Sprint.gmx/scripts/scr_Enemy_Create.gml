@@ -12,7 +12,7 @@ xPrevious = x;
 yPrevious = y;
 
 aggroRange = 250;
-punchRange = 50;
+punchRange = 48;
 
 attack = 0;
 currentSubImg = 1;

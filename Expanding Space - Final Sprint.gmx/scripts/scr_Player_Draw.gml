@@ -71,7 +71,7 @@ if state == st_Player.Normal
         }
         else
         {
-            //draw_sprite_ext(spritename, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            draw_sprite_ext(spr_Player_Arm_Pistol_Reload, weaponSubImg, x+16, y+32, facing, 1, facing*90, spriteColor, 1);
             weaponSubImg += 0.2;
             if weaponSubImg >= 10
             {
@@ -91,9 +91,9 @@ if state == st_Player.Normal
         }
         else
         {
-            //draw_sprite_ext(spritename, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
-            weaponSubImg += 0.2;
-            if weaponSubImg >= 10
+            draw_sprite_ext(spr_Player_Arm_Shotgun_Reload, weaponSubImg, x+16, y+32, facing, 1, facing*90, spriteColor, 1);
+            weaponSubImg += 0.1;
+            if weaponSubImg >= 13
             {
                 shotgunAmmo = 4;
                 reloading = false;
@@ -107,7 +107,7 @@ if state == st_Player.Normal
         }
         else
         {
-            draw_sprite_ext(spr_Player_Arm_Rifle_Reload, weaponSubImg, x+16, y+32, facing, 1, pointDirection+90, spriteColor, 1);
+            draw_sprite_ext(spr_Player_Arm_Rifle_Reload, weaponSubImg, x+16, y+32, facing, 1, facing*90, spriteColor, 1);
             weaponSubImg += 0.2;
             if weaponSubImg >= 10
             {
@@ -122,6 +122,7 @@ if state == st_Player.Death
 {
     draw_sprite_ext(spr_Player_Death, currentSubImg, x+16-(16*facing), y, facing, 1, 0, c_white, 1);   
     currentSubImg += 0.2;
+    hsp = 0;
 }
 
 

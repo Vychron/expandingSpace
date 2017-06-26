@@ -34,6 +34,8 @@
       <sprite>sprites\spr_Player_Arm_Shotgun</sprite>
       <sprite>sprites\spr_Player_Arm_Rifle</sprite>
       <sprite>sprites\spr_Player_Arm_Rifle_Reload</sprite>
+      <sprite>sprites\spr_Player_Arm_Shotgun_Reload</sprite>
+      <sprite>sprites\spr_Player_Arm_Pistol_Reload</sprite>
     </sprites>
     <sprites name="Enemy Sprites">
       <sprite>sprites\spr_Enemy_Idle</sprite>
@@ -153,6 +155,7 @@
     <script>scripts\script58.gml</script>
     <script>scripts\scr_Camera_Step.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_Text_Step.gml</script>
     <script>scripts\scr_Music.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -185,13 +188,13 @@
     <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\earth</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_tut1</room>
     <room>rooms\rm_tut2</room>
     <room>rooms\rm_tut3</room>
     <room>rooms\moon</room>
     <room>rooms\neptune</room>
-    <room>rooms\earth</room>
     <room>rooms\saturn</room>
   </rooms>
   <help>

@@ -13,7 +13,7 @@
   <code>globalvar grav;
 globalvar force;
 
-scr_text("de maan is een planeet met bijna het minste grafitie", 0.5, view_wview/2, view_hview/2+view_hview/4);</code>
+scr_text("de maan is heel weinig zwaartekracht.#Je kan hier veel hoger springen", 1, view_wview/2, view_hview/2+view_hview/4);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
