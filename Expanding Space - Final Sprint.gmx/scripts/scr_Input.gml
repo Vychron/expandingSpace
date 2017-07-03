@@ -6,6 +6,5 @@ right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 mouseLeft = mouse_check_button(mb_left);
 reload = keyboard_check(ord("R"));
-
 swap = keyboard_check_pressed(vk_tab);
 

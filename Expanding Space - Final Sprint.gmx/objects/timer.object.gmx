@@ -55,6 +55,7 @@ if seconds == 0
 }
 if mouse_check_button_released(mb_left)&amp;&amp;seconds &lt;= 4.8
 {
+    draw_texture_flush();
     room_goto_next();
 }
 </string>
