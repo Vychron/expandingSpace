@@ -9,7 +9,14 @@ if place_meeting(x, y, obj_Platform)
 }
 with instance_place(x,y,par_Enemies)
 {
-    hp -= 1;
+    if obj_Player.weaponState = st_Weapon.Rifle
+    {
+        hp -= 0.5;
+    }
+    else
+    {
+        hp -= 1;
+    }
     if (hit == 0)
     {
         if (hit >= 0)

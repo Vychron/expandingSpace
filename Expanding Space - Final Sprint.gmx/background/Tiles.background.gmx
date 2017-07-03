@@ -3,8 +3,8 @@
   <istileset>-1</istileset>
   <tilewidth>32</tilewidth>
   <tileheight>32</tileheight>
-  <tilexoff>8</tilexoff>
-  <tileyoff>8</tileyoff>
+  <tilexoff>4</tilexoff>
+  <tileyoff>4</tileyoff>
   <tilehsep>8</tilehsep>
   <tilevsep>8</tilevsep>
   <HTile>-1</HTile>
@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>365</width>
-  <height>296</height>
+  <width>308</width>
+  <height>248</height>
   <data>images\Tiles.png</data>
 </background>

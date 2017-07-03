@@ -76,6 +76,7 @@
     <background>background\tut3</background>
     <background>background\Tiles</background>
     <background>background\bg_SpaceTile</background>
+    <background>background\background10</background>
     <background>background\bg_NonTiled</background>
   </backgrounds>
   <paths name="paths"/>
@@ -112,7 +113,6 @@
       </scripts>
     </scripts>
     <script>scripts\empty.gml</script>
-    <script>scripts\Player_MoveCollide.gml</script>
     <script>scripts\scr_Approach.gml</script>
     <script>scripts\scr_Collect_Handler.gml</script>
     <script>scripts\scr_Collision.gml</script>
@@ -125,12 +125,6 @@
     <script>scripts\scr_Move.gml</script>
     <script>scripts\scr_Parralel.gml</script>
     <script>scripts\scr_Planet_Handler.gml</script>
-    <script>scripts\scr_Player_Collision.gml</script>
-    <script>scripts\scr_Player_Gravity.gml</script>
-    <script>scripts\scr_Player_Jump.gml</script>
-    <script>scripts\scr_Player_Move.gml</script>
-    <script>scripts\scr_Player_OnHit.gml</script>
-    <script>scripts\scr_Player_Shoot.gml</script>
     <script>scripts\scr_Scuba_Step.gml</script>
     <script>scripts\scr_Portal_OnCollide.gml</script>
     <script>scripts\scr_Portal_Step.gml</script>
@@ -138,17 +132,25 @@
     <script>scripts\scr_Projectile_Step.gml</script>
     <script>scripts\scr_Simple_Collision.gml</script>
     <script>scripts\scr_State_Pauze.gml</script>
-    <script>scripts\scr_Player_UI.gml</script>
-    <script>scripts\scr_Player_Rifle.gml</script>
     <script>scripts\scr_UI_Handler.gml</script>
-    <script>scripts\scr_Player_WeaponWheel.gml</script>
-    <script>scripts\scr_Player_Shotgun.gml</script>
     <scripts name="Player">
       <script>scripts\scr_Player_Create.gml</script>
       <script>scripts\scr_Player_State_Normal.gml</script>
       <script>scripts\scr_Player_Draw.gml</script>
       <script>scripts\scr_Player_Step.gml</script>
       <script>scripts\scr_Player_WeaponState.gml</script>
+      <script>scripts\Player_MoveCollide.gml</script>
+      <script>scripts\scr_Player_Shotgun.gml</script>
+      <script>scripts\scr_Player_WeaponWheel.gml</script>
+      <script>scripts\scr_Player_UI.gml</script>
+      <script>scripts\scr_Player_UI_.gml</script>
+      <script>scripts\scr_Player_Rifle.gml</script>
+      <script>scripts\scr_Player_Jump.gml</script>
+      <script>scripts\scr_Player_OnHit.gml</script>
+      <script>scripts\scr_Player_Collision.gml</script>
+      <script>scripts\scr_Player_Move.gml</script>
+      <script>scripts\scr_Player_Gravity.gml</script>
+      <script>scripts\scr_Player_Shoot.gml</script>
     </scripts>
     <script>scripts\scr_Text_Draw.gml</script>
     <script>scripts\scr_Text_Create.gml</script>
@@ -188,13 +190,13 @@
     <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\earth</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_tut1</room>
     <room>rooms\rm_tut2</room>
     <room>rooms\rm_tut3</room>
     <room>rooms\moon</room>
     <room>rooms\neptune</room>
+    <room>rooms\earth</room>
     <room>rooms\saturn</room>
   </rooms>
   <help>
