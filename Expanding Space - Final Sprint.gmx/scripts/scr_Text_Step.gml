@@ -1,4 +1,4 @@
-show_debug_message(doneTimer);
+//show_debug_message(doneTimer);
 
 if (time >= text_length)
 {

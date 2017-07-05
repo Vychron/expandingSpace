@@ -17,7 +17,7 @@ punchRange = 48;
 attack = 0;
 currentSubImg = 1;
 
-hp = 10;
+hp = 5;
 hsp = 0;
 vsp = 0;
 hsp_f = .0;

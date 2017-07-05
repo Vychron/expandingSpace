@@ -6,3 +6,4 @@ scr_Player_WeaponState();
 scr_Player_OnHit();
 scr_Music();
 
+show_debug_message(view_wview[0]/2)
