@@ -36,10 +36,6 @@ for (var i = 0; i < amount; i++)
             x = collider.bbox_left - sprite_width - 1;
             hsp = 0;
         }
-        else
-        {
-//            show_message("OH NEE ROBIN! D:");
-        }
     }
 }
     

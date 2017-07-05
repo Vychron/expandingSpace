@@ -60,11 +60,11 @@
       <sprite>sprites\spr_Heart</sprite>
       <sprite>sprites\spr_Bullet</sprite>
       <sprite>sprites\spr_Start</sprite>
+      <sprite>sprites\spr_Rifle</sprite>
+      <sprite>sprites\spr_Pistol</sprite>
+      <sprite>sprites\spr_Shotgun</sprite>
       <sprite>sprites\spr_UI</sprite>
     </sprites>
-    <sprite>sprites\sprite28</sprite>
-    <sprite>sprites\sprite29</sprite>
-    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -87,6 +87,7 @@
         <script>scripts\scr_Enemy_Move.gml</script>
         <script>scripts\scr_Enemy_OnHit.gml</script>
         <script>scripts\scr_Enemy_WallColliding.gml</script>
+        <script>scripts\scr_Gravity.gml</script>
       </scripts>
       <scripts name="Enemy_States">
         <script>scripts\scr_Enemy_State_Aggro.gml</script>
@@ -101,7 +102,10 @@
     </scripts>
     <scripts name="Misc">
       <scripts name="Collectables">
-        <script>scripts\scr_OnCollide_Scuba.gml</script>
+        <scripts name="Scuba">
+          <script>scripts\scr_OnCollide_Scuba.gml</script>
+          <script>scripts\scr_Scuba_Step.gml</script>
+        </scripts>
       </scripts>
       <scripts name="Dust">
         <script>scripts\scr_Dust_Create.gml</script>
@@ -111,54 +115,62 @@
         <script>scripts\scr_MovingPlatform_Create.gml</script>
         <script>scripts\scr_MovingPlatform_Step.gml</script>
       </scripts>
+      <scripts name="Portal">
+        <script>scripts\scr_Portal_Step.gml</script>
+        <script>scripts\scr_Portal_OnCollide.gml</script>
+      </scripts>
+      <scripts name="Bullets">
+        <script>scripts\scr_Projectile_Create.gml</script>
+        <script>scripts\scr_Projectile_Step.gml</script>
+      </scripts>
     </scripts>
-    <script>scripts\empty.gml</script>
-    <script>scripts\scr_Approach.gml</script>
-    <script>scripts\scr_Collect_Handler.gml</script>
-    <script>scripts\scr_Collision.gml</script>
-    <script>scripts\scr_Gravity.gml</script>
-    <script>scripts\scr_Handler.gml</script>
-    <script>scripts\scr_Hook_Draw.gml</script>
-    <script>scripts\scr_Hook_Shoot.gml</script>
-    <script>scripts\scr_Input.gml</script>
-    <script>scripts\scr_Jump.gml</script>
-    <script>scripts\scr_Move.gml</script>
-    <script>scripts\scr_Parralel.gml</script>
-    <script>scripts\scr_Planet_Handler.gml</script>
-    <script>scripts\scr_Scuba_Step.gml</script>
-    <script>scripts\scr_Portal_OnCollide.gml</script>
-    <script>scripts\scr_Portal_Step.gml</script>
-    <script>scripts\scr_Projectile_Create.gml</script>
-    <script>scripts\scr_Projectile_Step.gml</script>
-    <script>scripts\scr_Simple_Collision.gml</script>
-    <script>scripts\scr_State_Pauze.gml</script>
-    <script>scripts\scr_UI_Handler.gml</script>
+    <scripts name="Functions">
+      <script>scripts\scr_Approach.gml</script>
+      <scripts name="Collisions">
+        <script>scripts\scr_Collision.gml</script>
+        <script>scripts\scr_Simple_Collision.gml</script>
+      </scripts>
+      <script>scripts\empty.gml</script>
+    </scripts>
     <scripts name="Player">
+      <scripts name="player_States">
+        <script>scripts\scr_Player_State_Normal.gml</script>
+        <script>scripts\scr_State_Pauze.gml</script>
+        <script>scripts\scr_Player_WeaponState.gml</script>
+      </scripts>
       <script>scripts\scr_Player_Create.gml</script>
-      <script>scripts\scr_Player_State_Normal.gml</script>
       <script>scripts\scr_Player_Draw.gml</script>
-      <script>scripts\scr_Player_Step.gml</script>
-      <script>scripts\scr_Player_WeaponState.gml</script>
-      <script>scripts\Player_MoveCollide.gml</script>
-      <script>scripts\scr_Player_Shotgun.gml</script>
       <script>scripts\scr_Player_WeaponWheel.gml</script>
       <script>scripts\scr_Player_UI.gml</script>
-      <script>scripts\scr_Player_UI_.gml</script>
-      <script>scripts\scr_Player_Rifle.gml</script>
       <script>scripts\scr_Player_Jump.gml</script>
       <script>scripts\scr_Player_OnHit.gml</script>
-      <script>scripts\scr_Player_Collision.gml</script>
       <script>scripts\scr_Player_Move.gml</script>
       <script>scripts\scr_Player_Gravity.gml</script>
-      <script>scripts\scr_Player_Shoot.gml</script>
+      <scripts name="player_Weapons">
+        <script>scripts\scr_Player_Shoot.gml</script>
+        <script>scripts\scr_Player_Rifle.gml</script>
+        <script>scripts\scr_Player_Shotgun.gml</script>
+      </scripts>
     </scripts>
-    <script>scripts\scr_Text_Draw.gml</script>
-    <script>scripts\scr_Text_Create.gml</script>
-    <script>scripts\script58.gml</script>
-    <script>scripts\scr_Camera_Step.gml</script>
-    <script>scripts\scr_text.gml</script>
-    <script>scripts\scr_Text_Step.gml</script>
-    <script>scripts\scr_Music.gml</script>
+    <scripts name="world_Handlers">
+      <scripts name="text_Handler">
+        <script>scripts\scr_Text_Step.gml</script>
+        <script>scripts\scr_Text_Create.gml</script>
+        <script>scripts\scr_Text_Draw.gml</script>
+        <script>scripts\scr_text.gml</script>
+      </scripts>
+      <scripts name="camera_Handler">
+        <script>scripts\scr_Camera_Step.gml</script>
+      </scripts>
+      <scripts name="music_Handler">
+        <script>scripts\scr_Music.gml</script>
+      </scripts>
+      <script>scripts\scr_Input.gml</script>
+      <script>scripts\scr_Collect_Handler.gml</script>
+      <script>scripts\scr_Planet_Handler.gml</script>
+      <script>scripts\scr_Parralel.gml</script>
+      <script>scripts\scr_Handler.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
