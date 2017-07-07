@@ -12,7 +12,7 @@ if (Hp <= 0)
     state = st_Player.Death;
     if currentSubImg > 13
     {
-        show_message("You are dead");
+//        show_message("You are dead");
         Hp = 3;
         room_restart();
     }
